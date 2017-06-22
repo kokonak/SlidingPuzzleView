@@ -8,12 +8,12 @@
 
 ## About
 
-`SlidingPuzzleView` is a simple view written in Swift for implement sliding puzzle. You just create view, set some properties and execute `startPuzzle()`.
+`SlidingPuzzleView` is a simple view written in Swift for implement sliding puzzle. Create a view, set a couple properties and execute `startPuzzle()`!
 
 ## Usage
 
-- Properties value must set before `startPuzzle()`
-- SlidingPuzzleView frame must square.
+- Properties must set before executing `startPuzzle()`
+- SlidingPuzzleView frame width and height must be equal.
 
 ```swift
 let width: CGFloat = 300
@@ -31,11 +31,11 @@ puzzleView.startPuzzle()
 |---------|:------|:------------|
 |pieceBorderColor|UIColor| Piece border color|
 |pieceBorderWidth|CGFloat| Piece border width|
-|level|puzzleLevel|There are 4 levels in puzzle. veryEasy(2 x 2), easy(3 x 3), normal(4 x 4), hard(5 x 5)|
+|level|puzzleLevel|4 difficulty levels. veryEasy(2 x 2), easy(3 x 3), normal(4 x 4), hard(5 x 5)|
 |swapDuration|Double|Duration for swap animation|
 |puzzleImage|UIImage|Image for puzzle|
 |delegate|puzzleDelegate|Delegate (puzzleComplete, puzzleSwapCount)|
-|swapCount|Int|The number of times that user moved a piece.|
+|swapCount|Int|The number of times that the user has moved a piece.|
 
 ## Author
 
