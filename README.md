@@ -8,7 +8,7 @@
 
 ## About
 
-`SlidingPuzzleView` is a simple view written in Swift for implement sliding puzzle. Create a view, set a couple properties and execute `startPuzzle()`!
+`SlidingPuzzleView` is a simple view written in Swift for implementing a  sliding puzzle. Create a view, set a couple properties and execute. `startPuzzle()`!
 
 ## Usage
 
