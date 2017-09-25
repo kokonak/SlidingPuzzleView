@@ -146,8 +146,16 @@ class SlidingPuzzleView: UIView {
         case .right:
             index = 1
         }
-        swap(&self.imagePiecesArray[emptyPieceViewIndex], &self.imagePiecesArray[emptyPieceViewIndex + index])
+        
+        self.swapImagePiecesArray(index1: emptyPieceViewIndex, index2: emptyPieceViewIndex + index)
     }
+    
+    private func swapImagePiecesArray(index1: Int, index2: Int) {
+        let temp: UIView = self.imagePiecesArray[index1]
+        self.imagePiecesArray[index1] = self.imagePiecesArray[index2]
+        self.imagePiecesArray[index2] = temp
+    }
+    
     private func possibleMoveDirection(index: Int) -> [moveDirection] {
         let row: Int = index / self.level.rawValue
         let column: Int = index % self.level.rawValue
@@ -209,14 +217,14 @@ class SlidingPuzzleView: UIView {
         if emptyPieceViewRow == viewRow {
             if tapViewIndex == emptyPieceViewIndex + 1 ||
                 tapViewIndex == emptyPieceViewIndex - 1 {
-                swap(&self.imagePiecesArray[emptyPieceViewIndex], &self.imagePiecesArray[tapViewIndex])
+                self.swapImagePiecesArray(index1: emptyPieceViewIndex, index2: tapViewIndex)
                 self.viewSwapAnimation(view1: view, view2: self.emptyPieceView)
             }
         }
         else {
             if tapViewIndex == emptyPieceViewIndex + self.level.rawValue ||
                 tapViewIndex == emptyPieceViewIndex - self.level.rawValue {
-                swap(&self.imagePiecesArray[emptyPieceViewIndex], &self.imagePiecesArray[tapViewIndex])
+                self.swapImagePiecesArray(index1: emptyPieceViewIndex, index2: tapViewIndex)
                 self.viewSwapAnimation(view1: view, view2: self.emptyPieceView)
             }
         }
