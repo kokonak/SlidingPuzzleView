@@ -8,33 +8,31 @@
 
 import UIKit
 
-class ViewController: UIViewController, puzzleDelegate {
+final class ViewController: UIViewController, PuzzleDelegate {
 
     @IBOutlet weak var puzzleView: SlidingPuzzleView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        self.puzzleView.delegate = self
-        self.puzzleView.startPuzzle()
+
+        view.layoutIfNeeded()
+        puzzleView.delegate = self
+        puzzleView.startPuzzle()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
     @IBAction func ShuffleTouch(_ sender: Any) {
-        self.puzzleView.shufflePieces()
+        puzzleView.shuffle()
     }
     
     func puzzleComplete(view: SlidingPuzzleView) {
         print("complete")
-        let alert: UIAlertView = UIAlertView(title: "Puzzle complete", message: nil, delegate: nil, cancelButtonTitle: "Ok")
-        alert.show()
+        let controller = UIAlertController(title: "Complete", message: nil, preferredStyle: .alert)
+        let confirm = UIAlertAction(title: "Ok", style: .default)
+        controller.addAction(confirm)
+        present(controller, animated: true)
     }
+
     func puzzleSwapCount(view: SlidingPuzzleView, count: Int) {
         print(count)
     }

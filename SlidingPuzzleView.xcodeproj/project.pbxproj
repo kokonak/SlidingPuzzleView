@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		B6F537281EFA270600ACE869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F537271EFA270600ACE869 /* AppDelegate.swift */; };
 		B6F5372A1EFA270600ACE869 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F537291EFA270600ACE869 /* ViewController.swift */; };
-		B6F5372D1EFA270600ACE869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F5372B1EFA270600ACE869 /* Main.storyboard */; };
 		B6F5372F1EFA270600ACE869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F5372E1EFA270600ACE869 /* Assets.xcassets */; };
 		B6F537321EFA270600ACE869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F537301EFA270600ACE869 /* LaunchScreen.storyboard */; };
 		B6F5373A1EFA272100ACE869 /* SlidingPuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F537391EFA272100ACE869 /* SlidingPuzzleView.swift */; };
+		B6F6A6D9299095DE006D32FC /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F6A6D8299095DE006D32FC /* Array+Extension.swift */; };
+		B6F6A6DB2990B900006D32FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F6A6DA2990B900006D32FC /* Main.storyboard */; };
+		B6FF195F298CDFD600A9C216 /* PuzzleLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FF195E298CDFD600A9C216 /* PuzzleLevel.swift */; };
+		B6FF1961298CF4C500A9C216 /* MovingDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FF1960298CF4C500A9C216 /* MovingDirection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B6F537241EFA270600ACE869 /* SlidingPuzzleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlidingPuzzleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F537271EFA270600ACE869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F537291EFA270600ACE869 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6F5372C1EFA270600ACE869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6F5372E1EFA270600ACE869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F537311EFA270600ACE869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6F537331EFA270600ACE869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6F537391EFA272100ACE869 /* SlidingPuzzleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingPuzzleView.swift; sourceTree = "<group>"; };
+		B6F6A6D8299095DE006D32FC /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		B6F6A6DA2990B900006D32FC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B6FF195E298CDFD600A9C216 /* PuzzleLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleLevel.swift; sourceTree = "<group>"; };
+		B6FF1960298CF4C500A9C216 /* MovingDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingDirection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		B6F537261EFA270600ACE869 /* SlidingPuzzleView */ = {
 			isa = PBXGroup;
 			children = (
+				B6F6A6DC2990B980006D32FC /* SlidingPuzzle */,
 				B6F537271EFA270600ACE869 /* AppDelegate.swift */,
 				B6F537291EFA270600ACE869 /* ViewController.swift */,
-				B6F537391EFA272100ACE869 /* SlidingPuzzleView.swift */,
-				B6F5372B1EFA270600ACE869 /* Main.storyboard */,
 				B6F5372E1EFA270600ACE869 /* Assets.xcassets */,
+				B6F6A6DA2990B900006D32FC /* Main.storyboard */,
 				B6F537301EFA270600ACE869 /* LaunchScreen.storyboard */,
 				B6F537331EFA270600ACE869 /* Info.plist */,
+				B6F6A6D8299095DE006D32FC /* Array+Extension.swift */,
 			);
 			path = SlidingPuzzleView;
+			sourceTree = "<group>";
+		};
+		B6F6A6DC2990B980006D32FC /* SlidingPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF1960298CF4C500A9C216 /* MovingDirection.swift */,
+				B6FF195E298CDFD600A9C216 /* PuzzleLevel.swift */,
+				B6F537391EFA272100ACE869 /* SlidingPuzzleView.swift */,
+			);
+			path = SlidingPuzzle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +125,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -128,7 +146,7 @@
 			files = (
 				B6F537321EFA270600ACE869 /* LaunchScreen.storyboard in Resources */,
 				B6F5372F1EFA270600ACE869 /* Assets.xcassets in Resources */,
-				B6F5372D1EFA270600ACE869 /* Main.storyboard in Resources */,
+				B6F6A6DB2990B900006D32FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F5373A1EFA272100ACE869 /* SlidingPuzzleView.swift in Sources */,
+				B6FF1961298CF4C500A9C216 /* MovingDirection.swift in Sources */,
 				B6F5372A1EFA270600ACE869 /* ViewController.swift in Sources */,
+				B6F6A6D9299095DE006D32FC /* Array+Extension.swift in Sources */,
+				B6FF195F298CDFD600A9C216 /* PuzzleLevel.swift in Sources */,
 				B6F537281EFA270600ACE869 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,14 +169,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B6F5372B1EFA270600ACE869 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6F5372C1EFA270600ACE869 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6F537301EFA270600ACE869 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -208,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -252,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -269,7 +282,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kokonak.SlidingPuzzleView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -282,7 +299,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kokonak.SlidingPuzzleView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
